@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #12475f;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#showcase {
+    height: 300px;
+}
+
+#showcase h1 {
+    font-size: 25px;
+    position: relative;
+    margin: auto;
+    max-width: 350px;
+
+    animation: title 1s forwards;
+}
+
+@keyframes title {
+    0% {
+        top: -10px;
+    }
+
+    100% {
+        top: 220px;
+    }
+}
+
+.container {
+    max-width: 960px;
+    margin: 15px 0px;
+    padding: 10px 30px;
+    position: relative;
+
+    animation: description 1s;
+}
+
+@keyframes description {
+    0% {
+        left: -500px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 10px;
+    border: 1px solid #fff;
+    opacity: 0;
+    
+    animation: btn 2s forwards;
+    transition: all 500ms;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.btn:hover {
+    transform: rotateY(180deg);
+}

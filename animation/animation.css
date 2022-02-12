@@ -1,0 +1,46 @@
+body {
+    background-color: #bbb;
+}
+
+.box {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation-name: box-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes box-animation {
+    0% {
+        background-color: #fff;
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        background-color: rgb(255, 38, 110);
+        top: 0;
+        left: 300px;
+    }
+    
+    50% {
+        background-color: red;
+        top: 300px;
+        left: 300px;
+    }
+    
+    75% {
+        background-color: rgb(255, 38, 110);
+        top: 300px;
+        left: 0;
+    }
+
+    100% {
+        background-color: #fff;
+        top: 0;
+        left: 0;
+    }
+}
