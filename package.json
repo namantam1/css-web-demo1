@@ -1,0 +1,17 @@
+{
+  "name": "web",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "prestart": "rm -rf dist",
+    "start": "parcel src/**/*.html",
+    "build": "rm -rf dist && parcel build",
+    "predeploy": "rm -rf dist && parcel build --public-url https://namantam1.github.io/css-web-demo1",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.1",
+    "gh-pages": "^3.2.3",
+    "parcel": "latest"
+  }
+}
